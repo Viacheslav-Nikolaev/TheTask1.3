@@ -74,7 +74,8 @@ a {
       border-bottom-right-radius: 8px;
       top: -9px;
       left: -24px;
-      transition: 0.7s;
+      transition-duration: 0.5s;
+      transition-delay: 0.2s;
    }
 
    &__list-item:hover:before {
