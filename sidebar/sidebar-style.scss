@@ -45,6 +45,10 @@ a {
 }
 
 .sidebar-menu {
+   &__list {
+      margin-bottom: 60px;
+   }
+
    &__list-item {
       position: relative;
       margin-bottom: 32px;
@@ -59,8 +63,9 @@ a {
       opacity: 0.6;
    }
 
-   &__list-item:hover:before {
+   &__list-item::before {
       content: "";
+      opacity: 0;
       position: absolute;
       width: 4px;
       height: 32px;
@@ -69,6 +74,11 @@ a {
       border-bottom-right-radius: 8px;
       top: -9px;
       left: -24px;
+      transition: 0.7s;
+   }
+
+   &__list-item:hover:before {
+      opacity: 1;
    }
 }
 
