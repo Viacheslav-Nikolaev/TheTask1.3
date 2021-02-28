@@ -1,0 +1,132 @@
+.sidebar-page {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  background-color: #fff;
+  font-family: "TT Lakes", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1b1c21;
+  padding: 18px 24px 32px 24px;
+  margin: 0 auto auto 0;
+  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  letter-spacing: -0.2px;
+}
+
+a {
+  color: inherit;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  background: #ff3e79;
+  border-radius: 20px;
+}
+
+.sidebar-header {
+  margin-bottom: 50px;
+}
+
+.sidebar-header__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-header__item--first {
+  margin-right: 16px;
+}
+
+.sidebar-header__logo {
+  margin-right: 78px;
+}
+
+.sidebar-main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.sidebar-menu__list-item {
+  position: relative;
+  margin-bottom: 32px;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.sidebar-menu__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-menu__list-item:hover {
+  opacity: 0.6;
+}
+
+.sidebar-menu__list-item:hover:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background: #41f6d7;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  top: -9px;
+  left: -24px;
+}
+
+.sidebar-footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.sidebar-footer__item {
+  margin-right: 16px;
+}
+
+.sidebar-footer__item:last-child {
+  margin-right: 0;
+}
+
+.sidebar-footer__mail {
+  margin-bottom: 12px;
+}
+
+.sidebar-footer__phone {
+  letter-spacing: -0.6px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.sidebar-footer__menu-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar-footer__list {
+  margin-right: 7px;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.sidebar-footer__list:last-child {
+  margin-right: 0;
+}
+
+.sidebar-footer__list:hover {
+  opacity: 0.6;
+}
