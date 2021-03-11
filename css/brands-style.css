@@ -1,0 +1,98 @@
+.brands-page {
+  min-width: 320px;
+  height: 235px;
+  margin: 0 auto;
+  padding-left: 16px;
+  background: #f2f2f2;
+}
+
+.brands-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, right top, left top, from(#f8f8f8), color-stop(98.61%, #ffffff));
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+  height: 80px;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.brands-header__title {
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7e7e82;
+}
+
+.brand-menu {
+  position: relative;
+}
+
+.brand-menu::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  top: -15px;
+  right: 0;
+}
+
+.brand-menu__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.brand-menu__list {
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.brand-menu__list-item {
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.brand-item {
+  border: 1px solid #eaeaea;
+  background: #ffffff;
+  border-radius: 6px;
+  min-width: 240px;
+  height: 72px;
+  padding: 0 16px;
+}
+
+.brand-item__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand-item__img-arrow {
+  width: 40px;
+  height: 40px;
+  margin: 16px 0;
+}
+
+.brands-btn {
+  display: none;
+}

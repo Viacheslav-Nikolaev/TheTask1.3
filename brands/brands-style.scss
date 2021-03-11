@@ -1,0 +1,82 @@
+.brands-page {
+   min-width: 320px;
+   height: 235px;
+   margin: 0 auto;
+   padding-left: 16px;
+   background: #f2f2f2;
+}
+
+.brands-header {
+   display: flex;
+   align-items: center;
+   background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+   height: 80px;
+   margin-left: -16px;
+   margin-bottom: 16px;
+   padding: 0 16px;
+   &__title {
+      font-family: TT Lakes;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-transform: uppercase;
+      color: #7e7e82;
+   }
+}
+
+.brand-menu {
+   position: relative;
+
+
+   &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 100%;
+      background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      top: -15px;
+      right: 0;
+   }
+
+   &__list::-webkit-scrollbar {
+      width: 0;
+   }
+   
+   &__list {
+      overflow-x: auto;
+      display: flex;
+      justify-content: start;
+      flex-wrap: nowrap;
+   }
+
+   &__list-item {
+      margin-right: 32px;
+      margin-bottom: 16px;
+   }
+}
+
+.brand-item {
+   border: 1px solid #eaeaea;
+   background: #ffffff;
+   border-radius: 6px;
+   min-width: 240px;
+   height: 72px;
+   padding: 0 16px;
+
+   &__link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__img-arrow {
+      width: 40px;
+      height: 40px;
+      margin: 16px 0;
+   }
+}
+
+.brands-btn {
+   display: none;
+}
+
