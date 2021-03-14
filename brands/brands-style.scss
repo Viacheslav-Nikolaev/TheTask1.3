@@ -49,8 +49,7 @@
    border: 1px solid #eaeaea;
    background: #ffffff;
    border-radius: 6px;
-   min-width: 240px;
-   max-width: 240px;
+   width: 208px;
    height: 72px;
    padding: 0 16px;
 
@@ -71,6 +70,12 @@
    display: none;
 }
 
+.brand-item,
+.brand-menu__list-item,
+.swiper-slide {
+   box-sizing: content-box;
+}
+
 .swiper-pagination-bullet {
    width: 12px;
    height: 12px;
@@ -80,6 +85,10 @@
 .swiper-pagination-bullet-active {
    background: #b5b6bc;
 }
+
+
+
+//--------------------media----------------------------------
 
 @media (min-width: 768px) {
 
@@ -157,6 +166,8 @@
    }
 
 }
+
+
 
 @media (min-width: 1120px) {
    .brand-menu {

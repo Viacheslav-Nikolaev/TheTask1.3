@@ -6,11 +6,11 @@ function swiperStart() {
    swiper = new Swiper('.slider', {
       slidesPerView: 'auto',
       centeredSlides: false,
-      spaceBetween: 32,
+      spaceBetween: 16,
       setWrapperSize: true,
-
       pagination: {
          el: '.swiper-pagination',
+         type: 'bullets',
          clickable: true,
       }
    });
@@ -19,7 +19,7 @@ function swiperStart() {
 if (matchMedia) {
    let screen = window.matchMedia('(min-width: 768px)');
    screen.addListener(changes);
-   // changes(screen);
+   changes(screen);
 }
 
 function changes(screen) {

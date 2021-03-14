@@ -53,8 +53,7 @@
   border: 1px solid #eaeaea;
   background: #ffffff;
   border-radius: 6px;
-  min-width: 240px;
-  max-width: 240px;
+  width: 208px;
   height: 72px;
   padding: 0 16px;
 }
@@ -79,6 +78,13 @@
 
 .brands-btn {
   display: none;
+}
+
+.brand-item,
+.brand-menu__list-item,
+.swiper-slide {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .swiper-pagination-bullet {
