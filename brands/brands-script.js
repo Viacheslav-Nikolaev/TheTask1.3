@@ -1,0 +1,60 @@
+// --------------swiper---------------
+
+let swiper;
+
+function swiperStart() {
+   swiper = new Swiper('.slider', {
+      slidesPerView: 'auto',
+      centeredSlides: false,
+      spaceBetween: 32,
+      setWrapperSize: true,
+
+      pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+      }
+   });
+}
+
+if (matchMedia) {
+   let screen = window.matchMedia('(min-width: 768px)');
+   screen.addListener(changes);
+   // changes(screen);
+}
+
+function changes(screen) {
+   if (screen.matches) {
+      swiper.destroy();
+   } else {
+      swiperStart();
+   }
+}
+
+//----------------btn--------------------------------------------
+
+let btn = document.querySelector('.brands-btn');
+let wrapper = document.querySelector('.brand-menu__wrapper');
+let spanBtn = document.querySelector('.brands-btn > span');
+
+btn.addEventListener('click', function () {
+   if (!wrapper.classList.contains('brand-menu__wrapper--open')) {
+      wrapper.classList.remove('brand-menu__wrapper--close');
+      wrapper.classList.add('brand-menu__wrapper--open');
+      btn.classList.add('brands-btn__close')
+      spanBtn.textContent = 'Скрыть';
+   } else {
+      wrapper.classList.remove('brand-menu__wrapper--open');
+      wrapper.classList.add('brand-menu__wrapper--close');
+      btn.classList.remove('brands-btn__close')
+      spanBtn.textContent = 'Показать все';
+   }
+
+});
+
+
+
+
+
+
+
+
