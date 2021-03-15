@@ -12,10 +12,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, right top, left top, from(#f8f8f8), color-stop(98.61%, #ffffff));
-  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
-  height: 56px;
-  margin-bottom: 16px;
+  background: -webkit-gradient(linear, right top, left top, from(#F8F8F8), color-stop(98.61%, #FFFFFF));
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  height: 80px;
   padding: 0 16px;
 }
 
@@ -46,6 +45,7 @@
 
 .brand-menu__wrapper {
   padding-left: 16px;
+  padding-top: 16px;
   margin-bottom: 40px;
 }
 
@@ -98,18 +98,24 @@
 }
 
 @media (min-width: 768px) {
+  .brands-header {
+    background: -webkit-gradient(linear, left top, right top, color-stop(1.39%, #F8F8F8), to(#FFFFFF));
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    height: 56px;
+  }
   .brand-menu::before {
     display: none;
   }
   .brand-menu__wrapper {
     padding-left: 24px;
+    padding-top: 24px;
     margin-bottom: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-height: 160px;
+    max-height: 170px;
     overflow: hidden;
   }
   .brand-menu__wrapper--open {
@@ -166,6 +172,10 @@
 }
 
 @media (min-width: 1120px) {
+  .brands-header {
+    background: -webkit-gradient(linear, right top, left top, from(#F8F8F8), color-stop(98.61%, #FFFFFF));
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  }
   .brand-menu__list-item {
     margin-right: 32px;
   }
@@ -174,5 +184,17 @@
   }
   .brand-item {
     width: 208px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1120px) and (any-hover: hover) {
+  .brand-item:hover {
+    -webkit-transition-duration: 0.7s;
+            transition-duration: 0.7s;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 1px 1px 4px #474747;
+            box-shadow: 1px 1px 4px #474747;
   }
 }

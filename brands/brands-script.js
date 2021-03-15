@@ -1,6 +1,7 @@
+
 // --------------swiper---------------
 
-let swiper;
+let swiper; 
 
 function swiperStart() {
    swiper = new Swiper('.slider', {
@@ -16,19 +17,19 @@ function swiperStart() {
    });
 }
 
-if (matchMedia) {
-   let screen = window.matchMedia('(min-width: 768px)');
-   screen.addListener(changes);
-   changes(screen);
-}
 
 function changes(screen) {
-   if (screen.matches) {
-      swiper.destroy();
-   } else {
+   if (!screen.matches) {
       swiperStart();
+   } else if (swiper !== undefined) {
+      swiper.destroy();
    }
 }
+
+
+let screen = window.matchMedia('(min-width: 768px)');
+screen.addListener(changes);
+changes(screen);
 
 //----------------btn--------------------------------------------
 
@@ -40,7 +41,7 @@ btn.addEventListener('click', function () {
    if (!wrapper.classList.contains('brand-menu__wrapper--open')) {
       wrapper.classList.remove('brand-menu__wrapper--close');
       wrapper.classList.add('brand-menu__wrapper--open');
-      btn.classList.add('brands-btn__close')
+      btn.classList.add('brands-btn__close');
       spanBtn.textContent = 'Скрыть';
    } else {
       wrapper.classList.remove('brand-menu__wrapper--open');
@@ -50,6 +51,14 @@ btn.addEventListener('click', function () {
    }
 
 });
+
+
+
+
+
+
+
+
 
 
 
