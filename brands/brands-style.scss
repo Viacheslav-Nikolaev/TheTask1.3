@@ -137,6 +137,14 @@
       height: 70px;
    }
 
+   @media (any-hover: hover) {
+      .brand-item:hover {
+         transition-duration: 0.7s;
+         transform: scale(1.05);
+         box-shadow: 1px 1px 4px #474747;
+      }
+   }
+
    .brands-btn {
       display: inline-block;
       font-family: TT Lakes;
